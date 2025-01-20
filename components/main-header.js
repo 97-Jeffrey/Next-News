@@ -1,18 +1,23 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-export default function MainHeader() {
+export default function MainHeader(){
   return (
-    <header id="main-header">
-      <div id="logo">
-        <Link href="/">NextNews</Link>
+    <header id='main-header'>
+      <div id='logo'>
+         <Link href='/'>Next News</Link>
       </div>
       <nav>
         <ul>
           <li>
-            <Link href="/news">News</Link>
+            <Link href='/news'>News</Link>
+          </li>
+          <li>
+            <Link href='/archive'>Archive</Link>
           </li>
         </ul>
       </nav>
+
     </header>
-  );
+
+  )
 }
